@@ -8,47 +8,12 @@ $footer='flase';
 
 @section('content')
 
-    <header id="rtsHeader">
-        <div class="header-topbar header-topbar2 header-topbar5">
-            <div class="container header-container">
-                <div class="header-top-inner">
-                    <h3 class="welcome-text">35% Exclusive discount plus free next day delivery, <a href="{{ route('shop') }}"
-                            class="value">Excludes Sale <i class="fal fa-long-arrow-right"></i></a></h3>
-                    <div class="topbar-action">
-                        <div class="close">CLose <i class="fal fa-times"></i></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="header-topbar header-topbar2 header-lower-topbar header-lower-topbar5">
-            <div class="container header-container">
-                <div class="header-top-inner">
-                    <ul class="topbar-navs">
-                        <li><a href="{{ route('about') }}">About Us</a></li>
-                        <li><a href="{{ route('account') }}">My Account</a></li>
-                        <li><a href="{{ route('wishlist') }}">Wishlist</a></li>
-                        <li><a href="{{ route('cart') }}">Order Tracking</a></li>
-                    </ul>
-                    <div class="topbar-select-area">
-                        <select class="topbar-select custom-select">
-                            <option value="eng">English</option>
-                            <option value="esp">español</option>
-                            <option value="ban">Bangla</option>
-                        </select>
-                        <select class="topbar-select custom-select">
-                            <option value="usd">USD</option>
-                            <option value="eur">Euro</option>
-                            <option value="tk">Taka</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <header id="rtsHeader"> 
         <div class="navbar-wrap">
             <div class="navbar-part navbar-part3 navbar-part5">
                 <div class="container header-container">
                     <div class="navbar-inner navbar-inner2">
-                        <a href="{{ route('index') }}" class="logo"><img src="{{ asset('assets/images/logo2.svg') }}" alt="weiboo-logo"></a>
+                        <a href="{{ route('index') }}" class="logo"><img src="{{ asset('assets/images/logo99.webp') }}" alt="weiboo-logo" width="100"></a>
                         <div class="navbar-search-area">
                             <div class="search-input-inner">
                                 <div class="input-div">
@@ -74,17 +39,17 @@ $footer='flase';
                             </div>
                             <div class="cart action-item">
                                 <div class="cart-nav">
-                                    <div class="cart-icon icon"><i class="rt-cart"></i><span
+                                    <div class=" icon"><a href="{{route('index')}}"><i class="rt-cart"></i></a><span
                                             class="wishlist-dot icon-dot">3</span></div>
                                 </div>
                             </div>
                             <div class="wishlist action-item">
-                                <div class="favourite-icon icon"><a href="{{ route('wishlist') }}"><i class="rt-heart"></i></a>
+                                <div class="favourite-icon icon"><a href="{{ route('index') }}"><i class="rt-heart"></i></a>
                                 </div>
                             </div>
                             <a href="{{ route('login') }}" class="account"><i class="rt-user-2"></i></a>
                         </div>
-                        <div class="hamburger"><span></span></div>
+                        <div class=""><span></span></div>
                     </div>
                 </div>
             </div>
@@ -97,32 +62,26 @@ $footer='flase';
                         <div class="catagory-select-area">
                             <select class="custom-select">
                                 <option value="hide">All Catagory</option>
-                                <option value="all">All</option>
-                                <option value="men">Men</option>
-                                <option value="women">Women</option>
-                                <option value="shoes">Shoes</option>
-                                <option value="shoes">Glasses</option>
-                                <option value="shoes">Bags</option>
-                                <option value="shoes">Assesories</option>
+                                 
                             </select>
                         </div>
                         <div class="rts-menu">
                             <nav class="menus menu-toggle">
                                 <ul class="nav__menu">
-                                    <li class="has-dropdown"><a class="menu-item active1" href="#">Home <i
+                                    <li class="has-dropdown"><a class="menu-item active1" href="https://maktechsolution.com/">Home <i
                                         class="rt-plus"></i></a>
                                         
                                     </li>
-                                    <li class="has-dropdown"><a class="menu-item" href="#">Shop <i
+                                    <li class="has-dropdown"><a class="menu-item" href="https://maktechsolution.com/">Shop <i
                                         class="rt-plus"></i></a>
                                          
                                     </li>
-                                    <li class="has-dropdown"><a class="menu-item" href="#">Pages <i
+                                    <li class="has-dropdown"><a class="menu-item" href="https://maktechsolution.com/">Pages <i
                                         class="rt-plus"></i></a>
                                         
                                     </li>
 
-                                    <li class="has-dropdown"><a class="menu-item" href="#">Blog <i
+                                    <li class="has-dropdown"><a class="menu-item" href="https://maktechsolution.com/">Blog <i
                                         class="rt-plus"></i></a>
                                          
                                     </li>
@@ -312,12 +271,12 @@ $footer='flase';
                             </li>
                             <li class="mega-dropdown-li">
                                 <ul class="mega-dropdown-ul mm-show">
-                                    <li class="dropdown-li"><a class="dropdown-link" href="{{ route('productDetails') }}">Single Product
+                                    <li class="dropdown-li"><a class="dropdown-link" href="{{ route('index') }}">Single Product
                                             Layout
                                             One</a>
                                     </li>
                                     <li class="dropdown-li"><a class="dropdown-link"
-                                            href="{{ route('productDetails2') }}">Single Product Layout
+                                            href="{{ route('index') }}">Single Product Layout
                                             Two</a>
                                     </li>
                                     <li class="dropdown-li"><a class="dropdown-link" href="{{ route('variableProducts') }}">Variable Product</a>
@@ -471,7 +430,7 @@ $footer='flase';
         <div class="container">
             <div class="row">
                 <div class="col-xl-2">
-                    <a href="{{ route('category') }}" class="product-item product-item-vertical">
+                    <a href="{{ route('index') }}" class="product-item product-item-vertical">
                         <div class="product-thumb"><img src="{{ asset('assets/images/products/home5/category/1.png') }}"
                                 alt="product-image"></div>
                         <div class="contents">
@@ -484,7 +443,7 @@ $footer='flase';
                 <div class="col-xl-8">
                     <div class="row">
                         <div class="col-xl-4 col-md-6 col-sm-6">
-                            <a href="{{ route('category') }}" class="product-item product-item-horizontal">
+                            <a href="{{ route('index') }}" class="product-item product-item-horizontal">
                                 <div class="product-thumb"><img src="{{ asset('assets/images/products/home5/category/2.png') }}"
                                         alt="product-image"></div>
                                 <div class="contents">
@@ -494,7 +453,7 @@ $footer='flase';
                             </a>
                         </div>
                         <div class="col-xl-4 col-md-6 col-sm-6">
-                            <a href="{{ route('category') }}" class="product-item product-item-horizontal">
+                            <a href="{{ route('index') }}" class="product-item product-item-horizontal">
                                 <div class="product-thumb"><img src="{{ asset('assets/images/products/home5/category/3.png') }}"
                                         alt="product-image"></div>
                                 <div class="contents">
@@ -504,7 +463,7 @@ $footer='flase';
                             </a>
                         </div>
                         <div class="col-xl-4 col-md-6 col-sm-6">
-                            <a href="{{ route('category') }}" class="product-item product-item-horizontal">
+                            <a href="{{ route('index') }}" class="product-item product-item-horizontal">
                                 <div class="product-thumb"><img src="{{ asset('assets/images/products/home5/category/4.png') }}"
                                         alt="product-image"></div>
                                 <div class="contents">
@@ -514,7 +473,7 @@ $footer='flase';
                             </a>
                         </div>
                         <div class="col-xl-4 col-md-6 col-sm-6">
-                            <a href="{{ route('category') }}" class="product-item product-item-horizontal">
+                            <a href="{{ route('index') }}" class="product-item product-item-horizontal">
                                 <div class="product-thumb"><img src="{{ asset('assets/images/products/home5/category/5.png') }}"
                                         alt="product-image"></div>
                                 <div class="contents">
@@ -524,7 +483,7 @@ $footer='flase';
                             </a>
                         </div>
                         <div class="col-xl-4 col-md-6 col-sm-6">
-                            <a href="{{ route('category') }}" class="product-item product-item-horizontal">
+                            <a href="{{ route('index') }}" class="product-item product-item-horizontal">
                                 <div class="product-thumb"><img src="{{ asset('assets/images/products/home5/category/6.png') }}"
                                         alt="product-image"></div>
                                 <div class="contents">
@@ -534,7 +493,7 @@ $footer='flase';
                             </a>
                         </div>
                         <div class="col-xl-4 col-md-6 col-sm-6">
-                            <a href="{{ route('category') }}" class="product-item product-item-horizontal">
+                            <a href="{{ route('index') }}" class="product-item product-item-horizontal">
                                 <div class="product-thumb"><img src="{{ asset('assets/images/products/home5/category/7.png') }}"
                                         alt="product-image"></div>
                                 <div class="contents">
@@ -546,7 +505,7 @@ $footer='flase';
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-12">
-                    <a href="{{ route('category') }}" class="product-item product-item-vertical product-item-bg">
+                    <a href="{{ route('index') }}" class="product-item product-item-vertical product-item-bg">
                         <div class="product-thumb"><img src="{{ asset('assets/images/products/home5/category/8.png') }}"
                                 alt="product-image"></div>
                         <div class="contents">
@@ -581,17 +540,17 @@ $footer='flase';
                             </div>
                             <span class="stock">In Stock</span>
                         </div>
-                        <a href="{{ route('productDetails') }}" class="product-thumb"><img
+                        <a href="{{ route('index') }}" class="product-thumb"><img
                                 src="{{ asset('assets/images/products/home5/1.png') }}" alt="product-image"></a>
                         <div class="contents">
                             <span class="product-type">Cookie</span>
-                            <a href="{{ route('productDetails') }}" class="product-title">Sweet Onion Salsa</a>
+                            <a href="{{ route('index') }}" class="product-title">Sweet Onion Salsa</a>
                             <div class="product-bottom-content">
                                 <span class="product-price">$230,00</span>
                                 <button class="wishlist"><i class="rt-heart"></i></button>
                             </div>
                             <div class="product-actions product-actions3">
-                                <a href="{{ route('wishlist') }}" class="product-action"><i class="fal fa-heart"></i></a>
+                                <a href="{{ route('index') }}" class="product-action"><i class="fal fa-heart"></i></a>
                             </div>
                             <div class="product-features product-features2">
                                 <div class="hot-tag product-tag">HOT</div>
@@ -616,11 +575,11 @@ $footer='flase';
                             </div>
                             <span class="stock">In Stock</span>
                         </div>
-                        <a href="{{ route('productDetails') }}" class="product-thumb"><img
+                        <a href="{{ route('index') }}" class="product-thumb"><img
                                 src="{{ asset('assets/images/products/home5/2.png') }}" alt="product-image"></a>
                         <div class="contents">
                             <span class="product-type">Cookie</span>
-                            <a href="{{ route('productDetails') }}" class="product-title">Chocolate Chips</a>
+                            <a href="{{ route('index') }}" class="product-title">Chocolate Chips</a>
                             <div class="product-bottom-content">
                                 <span class="product-price">$230,00 <span class="old-price">$460,00</span></span>
                                 <button class="wishlist"><i class="rt-heart"></i></button>
@@ -652,11 +611,11 @@ $footer='flase';
                             </div>
                             <span class="stock">In Stock</span>
                         </div>
-                        <a href="{{ route('productDetails') }}" class="product-thumb"><img
+                        <a href="{{ route('index') }}" class="product-thumb"><img
                                 src="{{ asset('assets/images/products/home5/3.png') }}" alt="product-image"></a>
                         <div class="contents">
                             <span class="product-type">Cookie</span>
-                            <a href="{{ route('productDetails') }}" class="product-title">Meatless Chicken Tender</a>
+                            <a href="{{ route('index') }}" class="product-title">Meatless Chicken Tender</a>
                             <div class="product-bottom-content">
                                 <span class="product-price">$230,00</span>
                                 <button class="wishlist"><i class="rt-heart"></i></button>
@@ -684,11 +643,11 @@ $footer='flase';
                             </div>
                             <span class="stock">In Stock</span>
                         </div>
-                        <a href="{{ route('productDetails') }}" class="product-thumb"><img
+                        <a href="{{ route('index') }}" class="product-thumb"><img
                                 src="{{ asset('assets/images/products/home5/4.png') }}" alt="product-image"></a>
                         <div class="contents">
                             <span class="product-type">Cookie</span>
-                            <a href="{{ route('productDetails') }}" class="product-title">Cherry Spoiling Water</a>
+                            <a href="{{ route('index') }}" class="product-title">Cherry Spoiling Water</a>
                             <div class="product-bottom-content">
                                 <span class="product-price">$230,00 <span class="old-price">$460,00</span></span>
                                 <button class="wishlist"><i class="rt-heart"></i></button>
@@ -720,11 +679,11 @@ $footer='flase';
                             </div>
                             <span class="stock">In Stock</span>
                         </div>
-                        <a href="{{ route('productDetails') }}" class="product-thumb"><img
+                        <a href="{{ route('index') }}" class="product-thumb"><img
                                 src="{{ asset('assets/images/products/home5/5.png') }}" alt="product-image"></a>
                         <div class="contents">
                             <span class="product-type">Cookie</span>
-                            <a href="{{ route('productDetails') }}" class="product-title">Mixed Vegetables</a>
+                            <a href="{{ route('index') }}" class="product-title">Mixed Vegetables</a>
                             <div class="product-bottom-content">
                                 <span class="product-price">$230,00</span>
                                 <button class="wishlist"><i class="rt-heart"></i></button>
@@ -752,11 +711,11 @@ $footer='flase';
                             </div>
                             <span class="stock">In Stock</span>
                         </div>
-                        <a href="{{ route('productDetails') }}" class="product-thumb"><img
+                        <a href="{{ route('index') }}" class="product-thumb"><img
                                 src="{{ asset('assets/images/products/home5/6.png') }}" alt="product-image"></a>
                         <div class="contents">
                             <span class="product-type">Cookie</span>
-                            <a href="{{ route('productDetails') }}" class="product-title">Jerry Jam Bites</a>
+                            <a href="{{ route('index') }}" class="product-title">Jerry Jam Bites</a>
                             <div class="product-bottom-content">
                                 <span class="product-price">$230,00 <span class="old-price">$460,00</span></span>
                                 <button class="wishlist"><i class="rt-heart"></i></button>
@@ -788,11 +747,11 @@ $footer='flase';
                             </div>
                             <span class="stock">In Stock</span>
                         </div>
-                        <a href="{{ route('productDetails') }}" class="product-thumb"><img
+                        <a href="{{ route('index') }}" class="product-thumb"><img
                                 src="{{ asset('assets/images/products/home5/7.png') }}" alt="product-image"></a>
                         <div class="contents">
                             <span class="product-type">Cookie</span>
-                            <a href="{{ route('productDetails') }}" class="product-title">Organic Broccoli Cuts</a>
+                            <a href="{{ route('index') }}" class="product-title">Organic Broccoli Cuts</a>
                             <div class="product-bottom-content">
                                 <span class="product-price">$230,00</span>
                                 <button class="wishlist"><i class="rt-heart"></i></button>
@@ -820,11 +779,11 @@ $footer='flase';
                             </div>
                             <span class="stock">In Stock</span>
                         </div>
-                        <a href="{{ route('productDetails') }}" class="product-thumb"><img
+                        <a href="{{ route('index') }}" class="product-thumb"><img
                                 src="{{ asset('assets/images/products/home5/8.png') }}" alt="product-image"></a>
                         <div class="contents">
                             <span class="product-type">Cookie</span>
-                            <a href="{{ route('productDetails') }}" class="product-title">Mango Chunks</a>
+                            <a href="{{ route('index') }}" class="product-title">Mango Chunks</a>
                             <div class="product-bottom-content">
                                 <span class="product-price">$230,00</span>
                                 <button class="wishlist"><i class="rt-heart"></i></button>
@@ -852,11 +811,11 @@ $footer='flase';
                             </div>
                             <span class="stock">In Stock</span>
                         </div>
-                        <a href="{{ route('productDetails') }}" class="product-thumb"><img
+                        <a href="{{ route('index') }}" class="product-thumb"><img
                                 src="{{ asset('assets/images/products/home5/9.png') }}" alt="product-image"></a>
                         <div class="contents">
                             <span class="product-type">Cookie</span>
-                            <a href="{{ route('productDetails') }}" class="product-title">Turkey Burgers</a>
+                            <a href="{{ route('index') }}" class="product-title">Turkey Burgers</a>
                             <div class="product-bottom-content">
                                 <span class="product-price">$230,00 <span class="old-price">$460,00</span></span>
                                 <button class="wishlist"><i class="rt-heart"></i></button>
@@ -888,11 +847,11 @@ $footer='flase';
                             </div>
                             <span class="stock">In Stock</span>
                         </div>
-                        <a href="{{ route('productDetails') }}" class="product-thumb"><img
+                        <a href="{{ route('index') }}" class="product-thumb"><img
                                 src="{{ asset('assets/images/products/home5/10.png') }}" alt="product-image"></a>
                         <div class="contents">
                             <span class="product-type">Cookie</span>
-                            <a href="{{ route('productDetails') }}" class="product-title">Rising Cust Pizza</a>
+                            <a href="{{ route('index') }}" class="product-title">Rising Cust Pizza</a>
                             <div class="product-bottom-content">
                                 <span class="product-price">$230,00</span>
                                 <button class="wishlist"><i class="rt-heart"></i></button>
@@ -939,7 +898,7 @@ $footer='flase';
             <div class="row">
                 <div class="col-d-35 col-xl-6 col-lg-6 col-md-6">
                     <div class="product detail-product one filterd-items">
-                        <a href="{{ route('productDetails') }}" class="product-thumb"><img
+                        <a href="{{ route('index') }}" class="product-thumb"><img
                                 src="{{ asset('assets/images/products/home5/7.png') }}" alt="product-thumb"></a>
                         <div class="contents">
                             <div class="rating-area">
@@ -952,7 +911,7 @@ $footer='flase';
                                     <span class="rating-qnty">(120 Reviews)</span>
                                 </div>
                             </div>
-                            <a href="{{ route('productDetails') }}" class="product-title">Organic Broccoli Cuts <br>
+                            <a href="{{ route('index') }}" class="product-title">Organic Broccoli Cuts <br>
                                 Android 10.0 OS</a>
                             <span class="product-price">$129.99 <span class="old-price">$349.99</span></span>
                         </div>
@@ -960,7 +919,7 @@ $footer='flase';
                 </div>
                 <div class="col-d-35 col-xl-6 col-lg-6 col-md-6">
                     <div class="product detail-product one filterd-items">
-                        <a href="{{ route('productDetails') }}" class="product-thumb"><img
+                        <a href="{{ route('index') }}" class="product-thumb"><img
                                 src="{{ asset('assets/images/products/home5/9.png') }}" alt="product-thumb"></a>
                         <div class="contents">
                             <div class="rating-area">
@@ -973,7 +932,7 @@ $footer='flase';
                                     <span class="rating-qnty">(120 Reviews)</span>
                                 </div>
                             </div>
-                            <a href="{{ route('productDetails') }}" class="product-title">Turkey Burgers <br>
+                            <a href="{{ route('index') }}" class="product-title">Turkey Burgers <br>
                                 Android 10.0 OS</a>
                             <span class="product-price">$129.99 <span class="old-price">$349.99</span></span>
                         </div>
@@ -983,11 +942,11 @@ $footer='flase';
                     <div class="row m-0">
                         <div class="col-xl-12 col-md-6">
                             <div class="product-item">
-                                <a href="{{ route('productDetails') }}" class="product-thumb"><img
+                                <a href="{{ route('index') }}" class="product-thumb"><img
                                         src="{{ asset('assets/images/products/home5/6.png') }}" alt="product-image"></a>
                                 <div class="contents">
                                     <span class="product-type">Seafood</span>
-                                    <a href="{{ route('productDetails') }}" class="product-title">Chicok Butter with Canola Oil
+                                    <a href="{{ route('index') }}" class="product-title">Chicok Butter with Canola Oil
                                         400ML</a>
                                     <span class="product-price">$230,00</span>
                                 </div>
@@ -995,11 +954,11 @@ $footer='flase';
                         </div>
                         <div class="col-xl-12 col-md-6 last-col">
                             <div class="product-item">
-                                <a href="{{ route('productDetails') }}" class="product-thumb"><img
+                                <a href="{{ route('index') }}" class="product-thumb"><img
                                         src="{{ asset('assets/images/products/home5/5.png') }}" alt="product-image"></a>
                                 <div class="contents">
                                     <span class="product-type">Seafood</span>
-                                    <a href="{{ route('productDetails') }}" class="product-title">Chicok Butter with Canola Oil
+                                    <a href="{{ route('index') }}" class="product-title">Chicok Butter with Canola Oil
                                         400ML</a>
                                     <span class="product-price">$230,00</span>
                                 </div>
@@ -1127,7 +1086,7 @@ $footer='flase';
 
     <!-- ..::Restriction Notice start Here::.. -->
     <div class="rts-restriction-notice section-gap">
-        <h3 class="notice"><a href="{{ route('newsDetails') }}" class="highlight"><span class="star">**</span>See offer
+        <h3 class="notice"><a href="{{ route('index') }}" class="highlight"><span class="star">**</span>See offer
                 details.</a> Restrictions
             apply. Pricing, promotions and availability may vary by
             location and at Target.com</h3>
@@ -1181,7 +1140,7 @@ $footer='flase';
                 <div class="row">
                     <div class="col-xl-3 col-md-6 col-sm-6 box-widget-col">
                         <div class="footer-widget footer-box-widget">
-                            <div class="footer-logo"><img src="{{ asset('assets/images/logo2.svg') }}" alt="footer-logo"></div>
+                            <div class="footer-logo"><img src="{{ asset('assets/images/logo99.webp') }}" alt="footer-logo"></div>
                             <p>Solid is the information & experience
                                 directed at an end-user</p>
                             <div class="quick-contact">
@@ -1198,8 +1157,8 @@ $footer='flase';
                                     <div class="icon"><img src="{{ asset('assets/images/icons/mail3.png') }}" alt="phone-icon">
                                     </div>
                                     <div class="contact-info">
-                                        <a href="mailto:pixcelsthemes@gmail.com"
-                                            class="email-address info">pixcelsthemes@gmail.com</a>
+                                        <a href="mailto:maktechsolution@gmail.com"
+                                            class="email-address info">maktechsolution@gmail.com</a>
                                         <span class="title">Get Support</span>
                                     </div>
                                 </div>
@@ -1279,8 +1238,8 @@ $footer='flase';
         <div class="footer-bottom-area">
             <div class="container">
                 <div class="footer-bottom-inner">
-                    <span class="copyright">Copyright & Design By <a href="http://PixcelsThemes.com" class="brand"
-                            target="_blank">PixcelsThemes</a> -2024</span>
+                    <span class="copyright">Copyright & Design By <a href="http://maktechsolution.com" class="brand"
+                            target="_blank">maktechsolution</a> -2024</span>
                 </div>
             </div>
         </div>
