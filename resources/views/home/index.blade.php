@@ -61,27 +61,27 @@ $footer='flase';
                         <a href="{{ route('index') }}" class="logo"><img src="{{ asset('assets/images/logo2.svg') }}" alt="umart-logo"></a>
                         <div class="catagory-select-area">
                             <select class="custom-select">
-                                <option value="hide">All Catagory</option>
+                                <option value="hide">Grocery</option>
                                  
                             </select>
                         </div>
                         <div class="rts-menu">
                             <nav class="menus menu-toggle">
                                 <ul class="nav__menu">
-                                    <li class="has-dropdown"><a class="menu-item active1" href="https://maktechsolution.com/">Home <i
+                                    <li class="has-dropdown"><a class="menu-item active1" href="/">Home <i
                                         class="rt-plus"></i></a>
                                         
                                     </li>
-                                    <li class="has-dropdown"><a class="menu-item" href="https://maktechsolution.com/">Shop <i
+                                    <li class="has-dropdown"><a class="menu-item" href="#Featured_Products">Featured Products <i
                                         class="rt-plus"></i></a>
                                          
                                     </li>
-                                    <li class="has-dropdown"><a class="menu-item" href="https://maktechsolution.com/">Pages <i
+                                    <li class="has-dropdown"><a class="menu-item" href="#Hand_Picked_Products">Hand Picked Products <i
                                         class="rt-plus"></i></a>
                                         
                                     </li>
 
-                                    <li class="has-dropdown"><a class="menu-item" href="https://maktechsolution.com/">Blog <i
+                                    <li class="has-dropdown"><a class="menu-item" href="#Shop_insights_feeds">Shop insights & feeds <i
                                         class="rt-plus"></i></a>
                                          
                                     </li>
@@ -194,7 +194,7 @@ $footer='flase';
                     FOR FREE SHIPPING</span>
                 <span class="total-price">TOTAL: <span class="price">$556</span></span>
                 <a href="{{ route('checkOut') }}" class="checkout-btn cart-btn">PROCEED TO CHECKOUT</a>
-                <a href="{{ route('cart') }}" class="view-btn cart-btn">VIEW CART</a>
+                <a href="{{ route('index') }}" class="view-btn cart-btn">VIEW CART</a>
             </div>
         </div>
         <!-- slide-bar start -->
@@ -287,7 +287,7 @@ $footer='flase';
                             </li>
                             <li class="mega-dropdown-li">
                                 <ul class="mega-dropdown-ul mm-show">
-                                    <li class="dropdown-li"><a class="dropdown-link" href="{{ route('cart') }}">Cart
+                                    <li class="dropdown-li"><a class="dropdown-link" href="{{ route('index') }}">Cart
                                             </a>
                                     </li>
                                     <li class="dropdown-li"><a class="dropdown-link"
@@ -520,7 +520,7 @@ $footer='flase';
     <!-- ..::Product Category Section End Here::.. -->
 
     <!-- ..::Product Category Section Start Here::.. -->
-    <div class="rts-featured-product-section rts-featured-product-section2 section-gap">
+    <div class="rts-featured-product-section rts-featured-product-section2 section-gap" id="Featured_Products">
         <div class="container">
             <div class="section-header section-header4">
                 <span class="section-title section-title-2 mb--5
@@ -557,7 +557,7 @@ $footer='flase';
                             </div>
                         </div>
                         <div class="product-bottom-action">
-                            <a href="{{ route('cart') }}" class="addto-cart"><i class="fal fa-shopping-bag mr--5"></i> Add To
+                            <a href="{{ route('index') }}" class="addto-cart"><i class="fal fa-shopping-bag mr--5"></i> Add To
                                 Cart</a>
                             <button class="view-btn"><i class="fal fa-eye"></i></button>
                         </div>
@@ -589,11 +589,11 @@ $footer='flase';
                                 <div class="discount-tag product-tag">-35%</div>
                             </div>
                             <div class="product-actions product-actions3">
-                                <a href="{{ route('wishlist') }}" class="product-action"><i class="fal fa-heart"></i></a>
+                                <a href="{{ route('index') }}" class="product-action"><i class="fal fa-heart"></i></a>
                             </div>
                         </div>
                         <div class="product-bottom-action">
-                            <a href="{{ route('cart') }}" class="addto-cart"><i class="fal fa-shopping-bag mr--5"></i> Add To
+                            <a href="{{ route('index') }}" class="addto-cart"><i class="fal fa-shopping-bag mr--5"></i> Add To
                                 Cart</a>
                             <button class="view-btn"><i class="fal fa-eye"></i></button>
                         </div>
@@ -621,11 +621,11 @@ $footer='flase';
                                 <button class="wishlist"><i class="rt-heart"></i></button>
                             </div>
                             <div class="product-actions product-actions3">
-                                <a href="{{ route('wishlist') }}" class="product-action"><i class="fal fa-heart"></i></a>
+                                <a href="{{ route('index') }}" class="product-action"><i class="fal fa-heart"></i></a>
                             </div>
                         </div>
                         <div class="product-bottom-action">
-                            <a href="{{ route('cart') }}" class="addto-cart"><i class="fal fa-shopping-bag mr--5"></i> Add To
+                            <a href="{{ route('index') }}" class="addto-cart"><i class="fal fa-shopping-bag mr--5"></i> Add To
                                 Cart</a>
                             <button class="view-btn"><i class="fal fa-eye"></i></button>
                         </div>
@@ -657,11 +657,11 @@ $footer='flase';
                                 <div class="discount-tag product-tag">-35%</div>
                             </div>
                             <div class="product-actions product-actions3">
-                                <a href="{{ route('wishlist') }}" class="product-action"><i class="fal fa-heart"></i></a>
+                                <a href="{{ route('index') }}" class="product-action"><i class="fal fa-heart"></i></a>
                             </div>
                         </div>
                         <div class="product-bottom-action">
-                            <a href="{{ route('cart') }}" class="addto-cart"><i class="fal fa-shopping-bag mr--5"></i> Add To
+                            <a href="{{ route('index') }}" class="addto-cart"><i class="fal fa-shopping-bag mr--5"></i> Add To
                                 Cart</a>
                             <button class="view-btn"><i class="fal fa-eye"></i></button>
                         </div>
@@ -689,11 +689,11 @@ $footer='flase';
                                 <button class="wishlist"><i class="rt-heart"></i></button>
                             </div>
                             <div class="product-actions product-actions3">
-                                <a href="{{ route('wishlist') }}" class="product-action"><i class="fal fa-heart"></i></a>
+                                <a href="{{ route('index') }}" class="product-action"><i class="fal fa-heart"></i></a>
                             </div>
                         </div>
                         <div class="product-bottom-action">
-                            <a href="{{ route('cart') }}" class="addto-cart"><i class="fal fa-shopping-bag mr--5"></i> Add To
+                            <a href="{{ route('index') }}" class="addto-cart"><i class="fal fa-shopping-bag mr--5"></i> Add To
                                 Cart</a>
                             <button class="view-btn"><i class="fal fa-eye"></i></button>
                         </div>
@@ -725,11 +725,11 @@ $footer='flase';
                                 <div class="discount-tag product-tag">-35%</div>
                             </div>
                             <div class="product-actions product-actions3">
-                                <a href="{{ route('wishlist') }}" class="product-action"><i class="fal fa-heart"></i></a>
+                                <a href="{{ route('index') }}" class="product-action"><i class="fal fa-heart"></i></a>
                             </div>
                         </div>
                         <div class="product-bottom-action">
-                            <a href="{{ route('cart') }}" class="addto-cart"><i class="fal fa-shopping-bag mr--5"></i> Add To
+                            <a href="{{ route('index') }}" class="addto-cart"><i class="fal fa-shopping-bag mr--5"></i> Add To
                                 Cart</a>
                             <button class="view-btn"><i class="fal fa-eye"></i></button>
                         </div>
@@ -757,11 +757,11 @@ $footer='flase';
                                 <button class="wishlist"><i class="rt-heart"></i></button>
                             </div>
                             <div class="product-actions product-actions3">
-                                <a href="{{ route('wishlist') }}" class="product-action"><i class="fal fa-heart"></i></a>
+                                <a href="{{ route('index') }}" class="product-action"><i class="fal fa-heart"></i></a>
                             </div>
                         </div>
                         <div class="product-bottom-action">
-                            <a href="{{ route('cart') }}" class="addto-cart"><i class="fal fa-shopping-bag mr--5"></i> Add To
+                            <a href="{{ route('index') }}" class="addto-cart"><i class="fal fa-shopping-bag mr--5"></i> Add To
                                 Cart</a>
                             <button class="view-btn"><i class="fal fa-eye"></i></button>
                         </div>
@@ -789,11 +789,11 @@ $footer='flase';
                                 <button class="wishlist"><i class="rt-heart"></i></button>
                             </div>
                             <div class="product-actions product-actions3">
-                                <a href="{{ route('wishlist') }}" class="product-action"><i class="fal fa-heart"></i></a>
+                                <a href="{{ route('index') }}" class="product-action"><i class="fal fa-heart"></i></a>
                             </div>
                         </div>
                         <div class="product-bottom-action">
-                            <a href="{{ route('cart') }}" class="addto-cart"><i class="fal fa-shopping-bag mr--5"></i> Add To
+                            <a href="{{ route('index') }}" class="addto-cart"><i class="fal fa-shopping-bag mr--5"></i> Add To
                                 Cart</a>
                             <button class="view-btn"><i class="fal fa-eye"></i></button>
                         </div>
@@ -825,11 +825,11 @@ $footer='flase';
                                 <div class="discount-tag product-tag">-35%</div>
                             </div>
                             <div class="product-actions product-actions3">
-                                <a href="{{ route('wishlist') }}" class="product-action"><i class="fal fa-heart"></i></a>
+                                <a href="{{ route('index') }}" class="product-action"><i class="fal fa-heart"></i></a>
                             </div>
                         </div>
                         <div class="product-bottom-action">
-                            <a href="{{ route('cart') }}" class="addto-cart"><i class="fal fa-shopping-bag mr--5"></i> Add To
+                            <a href="{{ route('index') }}" class="addto-cart"><i class="fal fa-shopping-bag mr--5"></i> Add To
                                 Cart</a>
                             <button class="view-btn"><i class="fal fa-eye"></i></button>
                         </div>
@@ -857,11 +857,11 @@ $footer='flase';
                                 <button class="wishlist"><i class="rt-heart"></i></button>
                             </div>
                             <div class="product-actions product-actions3">
-                                <a href="{{ route('wishlist') }}" class="product-action"><i class="fal fa-heart"></i></a>
+                                <a href="{{ route('index') }}" class="product-action"><i class="fal fa-heart"></i></a>
                             </div>
                         </div>
                         <div class="product-bottom-action">
-                            <a href="{{ route('cart') }}" class="addto-cart"><i class="fal fa-shopping-bag mr--5"></i> Add To
+                            <a href="{{ route('index') }}" class="addto-cart"><i class="fal fa-shopping-bag mr--5"></i> Add To
                                 Cart</a>
                             <button class="view-btn"><i class="fal fa-eye"></i></button>
                         </div>
@@ -888,7 +888,7 @@ $footer='flase';
     <!-- ..::Discount Code End Here::.. -->
 
     <!-- ..::Picked Category Section Start Here::.. -->
-    <div class="rts-picked-product-section section-gap">
+    <div class="rts-picked-product-section section-gap" id="Hand_Picked_Products">
         <div class="container">
             <div class="section-header section-header4">
                 <span class="section-title section-title-2 mb--5
@@ -983,7 +983,7 @@ $footer='flase';
     <!-- ..::Ad Banner Section End Here::.. -->
 
     <!-- ..::Feeds Section Start Here::.. -->
-    <div class="rts-featured-product-section3 section-3">
+    <div class="rts-featured-product-section3 section-3" id="Shop_insights_feeds">
         <div class="container">
             <div class="rts-featured-product-section-inner">
                 <div class="newsletter-contents">
@@ -1329,10 +1329,10 @@ $footer='flase';
                                     <button class="button plus">+<i class="fal fa-plus plus"></i></button>
                                 </div>
                             </div>
-                            <a href="{{ route('cart') }}" class="addto-cart-btn action-item"><i class="rt-basket-shopping"></i>
+                            <a href="{{ route('index') }}" class="addto-cart-btn action-item"><i class="rt-basket-shopping"></i>
                                 Add To
                                 Cart</a>
-                            <a href="{{ route('wishlist') }}" class="wishlist-btn action-item"><i class="rt-heart"></i></a>
+                            <a href="{{ route('index') }}" class="wishlist-btn action-item"><i class="rt-heart"></i></a>
                         </div>
                         <div class="product-uniques">
                             <span class="sku product-unipue"><span>SKU: </span> BO1D0MX8SJ</span>
